@@ -1,0 +1,87 @@
+.map{
+    p{
+        font-size: 14px;
+        line-height: 1.2;
+    }
+    form{
+        .form-control{
+            border: none;
+            border-radius: 0;
+            border-bottom: 1px solid #EAEAEA;
+            padding: 2rem 0.75rem;
+            &:focus{
+                box-shadow: none;
+            }
+        }
+        .square{
+            position: relative;
+            margin-left: 87%;
+            a{
+                text-decoration: none;
+                font-size: 15px;
+                color: #E5AE49;
+                position: absolute;
+                z-index: 99;
+                width: 100px;
+                background: #fff;
+                svg{
+                    margin-left: 10px;
+                }
+               
+            }
+            &::before{
+                content: ' ';
+                position: absolute;
+                width: 79px;
+                height: 54px;
+                border: 2px solid #E5AE49;
+                border-radius: 4px;
+                left: -47px;
+                top: -19px;
+            }
+        }
+    }
+}
+
+@media (max-width: 575.98px){
+    .map{
+        form{
+            .square{
+                margin-left: 69%;
+            }
+        }
+        #map1{height: 350px !important;}
+    }
+
+}
+
+/* Small devices (landscape phones, 576px and up)*/
+@media (min-width: 576px) and (max-width: 767.98px) {
+    .map{
+        form{
+            .square{
+                margin-left: 75%;
+            }
+        }
+        #map1{height: 450px !important;}
+    }
+}
+
+/* Medium devices (tablets, 768px and up)*/
+@media (min-width: 768px) and (max-width: 991.98px) {
+    .map{
+        form{
+            .square{margin-left: 68%;}
+        }
+        #map1{height: 560px !important;}
+    }
+}
+
+/*Large devices (desktops, 992px and up)*/
+@media (min-width: 992px) and (max-width: 1199.98px) { 
+    .map{
+        form{
+            .square{margin-left: 77%;}
+        }
+    }
+}
